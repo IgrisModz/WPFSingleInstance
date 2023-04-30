@@ -44,7 +44,6 @@ namespace WPFSingleInstance
             }
             finally
             {
-
                 var p = _LocalFree(argv);
                 // Otherwise LocalFree failed.
                 // Assert.AreEqual(IntPtr.Zero, p);

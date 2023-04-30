@@ -10,13 +10,18 @@ namespace WPFSingleInstance.Tests
     {
         #region ISingleInstanceApp Members
 
+        /// <summary>
+        /// Execute this method when you retry to open the application and its already open
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public bool SignalExternalCommandLineArgs(IList<string> args)
         {
             if (MainWindow is null)
             {
                 MainWindow = new MainWindow();
             }
-
+            
             if (MainWindow.WindowState == WindowState.Minimized)
             {
                 MainWindow.WindowState = WindowState.Normal;

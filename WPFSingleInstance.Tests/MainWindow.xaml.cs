@@ -1,6 +1,4 @@
-﻿using System.Windows;
-
-namespace WPFSingleInstance.Tests
+﻿namespace WPFSingleInstance.Tests
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
